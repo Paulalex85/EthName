@@ -27,6 +27,8 @@ describe("EthName", function () {
         expect(await ethName.readName(alice.address)).to.equal("testName");
         await ethName.setName("anotherName");
         expect(await ethName.readName(alice.address)).to.equal("anotherName");
+        await ethName.connect(bob).setName("testName");
+        expect(await ethName.readName(bob.address)).to.equal("testName");
     });
 
     it("names are unique", async function () {
