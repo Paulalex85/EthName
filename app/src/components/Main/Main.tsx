@@ -4,7 +4,7 @@ import { providers } from 'ethers';
 import { StaticJsonRpcProvider } from '@ethersproject/providers';
 import { useAddress, useUserProvider } from '../../hooks';
 import { NETWORKS } from '../../constants';
-import { useBalance } from 'eth-hooks';
+import UpdateName from './components/UpdateName';
 
 const Main = () => {
     const cachedNetwork = window.localStorage.getItem('network');
@@ -19,6 +19,7 @@ const Main = () => {
     return (
         <React.Fragment>
             <Account setInjectedProvider={setInjectedProvider} userProvider={userProvider} address={address} />
+            <UpdateName userProvider={userProvider} address={address} />
         </React.Fragment>
     );
 };
