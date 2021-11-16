@@ -38,8 +38,9 @@
         "prettier-plugin-solidity": "^1.0.0-beta.13",
         "solhint": "^3.3.6",
         "solidity-coverage": "^0.7.17",
-        "ts-node": "^10.4.0",
         "truffle": "^5.4.10",
+        "truffle-plugin-verify": "^0.5.18",
+        "ts-node": "^10.4.0",
         "typechain": "^5.2.0",
         "typescript": "^4.4.4"
     }
